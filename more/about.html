@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <title>home</title>
+    <link rel="stylesheet" href="CSS/about_style.css">
+
 </head>
-<body class="">
+<body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
             <a href="#" class="navbar-brand">New World</a>
@@ -26,36 +28,42 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item">
-                        <a href="#" class="nav-link link-white">Home</a>
+                        <a href="../index.html" class="nav-link link-white">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="more/about.html" class="nav-link link-white">About</a>
+                        <a href="#" class="nav-link link-white">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="more/Table.html" class="nav-link link-white">Table</a>
+                        <a href="Table.html" class="nav-link link-white">Table</a>
                     </li>
                 </ul>
             </div>
            
         </div>  
     </nav>
-    <main class="container d-flex flex-column justify-content-between h-100">
-        <form action="about.html" class="main-form w-75 p-3 m-auto">
-            <div class="name d-flex w-100 " >
-                <input class="form-control me-2" type="text"  placeholder="first Name*" required>
-                <input class="form-control ms-2" type="text"  placeholder="Last Name*" required>
-            </div>
-            <input class="form-control mt-4" type="password"  placeholder="Password*" required>
-            <div class="submit w-100 d-flex justify-content-end">
-                <button type="submit" class="btn btn-primary mt-4 ">Submit</button>
-            </div>
-        </form>
-        <footer class="bg-secondary text-white text-center ">
-            <div class="container">@2023 WEP A</div>
-        </footer>
+    <h2 class="question mb-5">Which one is your choice?</h2>
+    <main class="main-cneter">
+        <div class="rings">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        </div>
+        <div class="rings">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        </div>
+        <div class="rings">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        </div>
     </main>
-   
-
+    <form action="Table.html"  class="main-cneter mt-4" >
+        <button type="submit" class="btn bg-dark text-light">1</button>
+        <button type="submit" class="btn bg-dark text-light">2</button>
+        <button type="submit" class="btn bg-dark text-light">3</button>
+    </form>
 
     <script src="js/bootstrap.bundle.min.js" ></script>
 </body>
