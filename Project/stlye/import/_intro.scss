@@ -1,0 +1,33 @@
+@import '../component/colors';
+@import '../mixin/btn';
+@import '../mixin/intro1';
+.intro{
+    background: url(../../image/pic3.jpg);
+    @include intro ;
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        width: 80%;
+        height: 40%;
+        gap: 10px;
+
+        .search{
+            width: 80%;
+            
+            input{
+                width: 80%;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+            }
+            button{
+                @include btn;
+                background-color: $main_color;
+                color: whitesmoke;
+            }
+        }
+    }
+    
+}

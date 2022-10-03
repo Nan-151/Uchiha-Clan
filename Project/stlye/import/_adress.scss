@@ -1,0 +1,25 @@
+@import '../component/colors';
+@import '../mixin/btn';
+@import '../mixin/icon';
+
+.icons{
+    @include icons;
+    margin-bottom: 30px;
+    .icon{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        i{
+            @include icon ($size: 19px); 
+
+        }
+        .detail{
+            p{
+                font-size: small;
+            }
+        }
+    }
+
+}
