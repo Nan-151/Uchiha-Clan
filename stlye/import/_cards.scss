@@ -1,0 +1,19 @@
+@import '../component/colors';
+@import '../component/shadow';
+@import '../mixin/btn';
+@import '../mixin/card';
+.card-contant{
+    @include card-containt;
+    h1{
+        text-align: center; 
+    }
+    .card{
+        @include card;
+        .info{
+            display: flex;
+            justify-content:space-between;
+            width: 100%;
+        }
+    }
+    
+}

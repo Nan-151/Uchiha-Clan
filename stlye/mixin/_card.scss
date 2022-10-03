@@ -1,0 +1,21 @@
+@import '../component/shadow';
+
+@mixin card-containt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    margin-top: 30px;
+}
+@mixin card {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+    background-color: $sub_color2;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: $shadow;
+}

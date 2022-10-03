@@ -1,0 +1,65 @@
+@import '../component/colors';
+@import '../mixin/btn';
+@import '../mixin/hover';
+nav{
+    flex: 1;
+    background-color: $main_color;
+    display: flex;
+    
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    .logo{
+        img{
+            flex: 1;
+        }
+    }
+    .nav-left{
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+        ul{
+            flex: 3;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10%;
+           li{
+            display: flex;
+            gap: 30px;
+            a{
+                text-decoration: none;
+                list-style: none;
+                color: white;
+                font-size: larger;
+            }
+           }
+        }
+    }
+    .nav-right{
+        flex: 0.7;
+        text-align: end;
+        padding-right: 15px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+        .log {
+            padding: 10px;
+        }
+        // img{
+        //     width: 50px;
+        //     height: 50px;
+        //     border-radius: 50%;
+        // }
+        button{
+            @include btn
+        } ;
+    }
+}
+.hover{
+    font-weight: bold;
+    border-bottom: 3px solid $border_color;
+}
+@include hover;
