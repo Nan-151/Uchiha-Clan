@@ -1,0 +1,14 @@
+@import '../component/colors';
+@import '../mixin/btn';
+@import '../mixin/icon';
+
+.icons{
+    @include icons;
+    .icon{
+        text-align: center;
+        i{
+            @include icon;
+        }
+    }
+
+}

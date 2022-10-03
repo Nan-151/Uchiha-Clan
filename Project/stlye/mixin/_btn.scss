@@ -1,0 +1,9 @@
+@import '../component/colors';
+
+@mixin btn ($color: $sub_color2) {
+    padding: 9px;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    background-color: $color;
+}

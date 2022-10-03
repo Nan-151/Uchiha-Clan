@@ -1,0 +1,8 @@
+@import '../component/colors';
+
+@mixin hover {
+    li:hover{
+        background-color: $sub_color;
+        border-radius: 7px;
+    }
+}

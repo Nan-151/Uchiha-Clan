@@ -1,0 +1,40 @@
+@import '../component/colors';
+@import '../mixin/btn';
+
+.form-contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    form{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 20px;
+        .personal, h2{
+            display: flex;
+            gap: 10%;
+            .name{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                input{
+                    padding: 10px;
+                }
+                textarea{
+                    outline: none;
+                }
+            }
+            
+        }
+        .btn{
+            button{
+                @include btn ($color: $warning) ;
+                color: $background
+            }
+        }
+    }
+}
